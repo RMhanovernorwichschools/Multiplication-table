@@ -32,7 +32,7 @@ b=1
 for x in range(1, height+1):
     a=1
     for x in range(1, width+1):
-        disp=disp+'  {0:>3}'.format(a*b)
+        disp=disp+'{0:>3}   '.format(a*b)
         a+=1
     print(disp)
     disp=''
