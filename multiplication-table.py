@@ -22,7 +22,6 @@ Height of multiplication table: 8
   8  16  24  32  40  48  56  64  72  80
 """
 
-disp=''
 width=int(input("Width of multiplication table: "))
 height=int(input("Height of multiplication table: "))
 
@@ -30,10 +29,10 @@ print(' ')
 
 b=1
 for x in range(1, height+1):
+    disp=''
     a=1
     for x in range(1, width+1):
         disp=disp+'{0:>3}   '.format(a*b)
         a+=1
     print(disp)
-    disp=''
     b+=1
