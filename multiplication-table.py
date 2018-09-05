@@ -1,7 +1,7 @@
 """
 multiplication-table.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Rachel Matthew
+Credit: none
 Assignment:
 
 Write and submit a Python program that prints a multiplication table. The user 
@@ -31,9 +31,8 @@ print(' ')
 b=1
 for x in range(1, height+1):
     a=1
-    for width in range(1, width+1):
-        new='{0:>3}'.format(a*b)
-        disp=disp+' '+new
+    for x in range(1, width+1):
+        disp=disp+'  {0:>3}'.format(a*b)
         a+=1
     print(disp)
     disp=''
